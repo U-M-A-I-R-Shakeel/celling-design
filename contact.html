@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — CeilCraft Studio</title>
+  <meta name="description" content="Request a free quote or site visit for your ceiling or wall design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    /* Apply saved language before the page paints (prevents a flash of the wrong layout) */
+    (function () {
+      var h = document.documentElement, l;
+      try { l = new URLSearchParams(location.search).get("lang") || localStorage.getItem("cc-lang"); } catch (e) {}
+      if (l === "ar") { h.lang = "ar"; h.dir = "rtl"; h.classList.add("i18n-pending"); setTimeout(function () { h.classList.add("i18n-ready"); }, 2500); }
+    })();
+  </script>
+</head>
+<body data-page="contact">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__bg" style="background-image:url('images/8232455.jpg?v=2')"></div>
+      <div class="container page-hero__content">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>Contact</nav>
+        <h1>Request a Free Quote</h1>
+        <p>Tell us about your space and we'll get back to you within 24 hours, or message us directly on WhatsApp.</p>
+      </div>
+    </section>
+
+    <!-- Contact cards -->
+    <section class="section section--tight">
+      <div class="container info-cards">
+        <a class="info-card" data-site-href="phone">
+          <span class="info-card__icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+          <small>Call us</small><strong data-site="phone"></strong>
+        </a>
+        <a class="info-card" data-site-href="whatsapp" target="_blank" rel="noopener">
+          <span class="info-card__icon info-card__icon--green"><svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg></span>
+          <small>WhatsApp</small><strong>Chat with us</strong>
+        </a>
+        <a class="info-card" data-site-href="email">
+          <span class="info-card__icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <small>Email</small><strong data-site="email"></strong>
+        </a>
+        <div class="info-card">
+          <span class="info-card__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+          <small>Visit our studio</small><strong data-site="address"></strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="section section--tint">
+      <div class="container contact__inner">
+        <div>
+          <p class="eyebrow">Get in Touch</p>
+          <h2>Tell us about your project</h2>
+          <p class="muted">Fill in the form and our designer will call you to arrange a free site visit. Prefer chatting? Use the WhatsApp button and your details are sent as a message.</p>
+          <ul class="contact__info">
+            <li><span>Working hours</span><b data-site="hours"></b></li>
+            <li><span>Response time</span>Within 24 hours</li>
+            <li><span>Service area</span>Lahore, Islamabad, Karachi & nearby cities</li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <form class="form" id="quoteForm" novalidate>
+            <div class="picked" id="pickedDesign" hidden></div>
+            <div class="form__row">
+              <label>Full name *<input name="name" required placeholder="Your name" autocomplete="name" /></label>
+              <label>Phone *<input name="phone" required placeholder="03xx xxxxxxx" inputmode="tel" autocomplete="tel" /></label>
+            </div>
+            <div class="form__row">
+              <label>City<input name="city" placeholder="e.g. Lahore" /></label>
+              <label>Space type
+                <select name="space">
+                  <option>Living Room</option><option>Bedroom</option><option>Drawing Room</option><option>Kitchen</option>
+                  <option>Bathroom</option><option>Office</option><option>Shop / Café</option><option>Hall / Lobby</option><option>Other</option>
+                </select>
+              </label>
+            </div>
+            <div class="form__row">
+              <label>Design of interest
+                <select name="design" id="formDesign"><option value="">Not sure yet</option></select>
+              </label>
+              <label>Area (sq ft)<input name="area" type="number" min="1" placeholder="e.g. 250" /></label>
+            </div>
+            <label>Message<textarea name="message" rows="4" placeholder="Ceiling height, timeline, lighting ideas…"></textarea></label>
+            <div class="form__actions">
+              <button class="btn btn--gold" type="submit">Send Request</button>
+              <button class="btn btn--whatsapp" type="button" id="sendWhatsapp">Send via WhatsApp</button>
+            </div>
+          </form>
+
+          <div class="form-success" id="formSuccess" hidden>
+            <div class="form-success__icon">✓</div>
+            <h3>Thank you, <span id="successName"></span>!</h3>
+            <p>We've received your request. Our designer will call you within 24 hours to arrange your free site visit.</p>
+            <button class="btn btn--outline" id="sendAnother">Send another request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Before You Ask</p>
+          <h2>Quick Answers</h2>
+        </div>
+        <div class="faq" data-reveal>
+          <div class="faq__item"><button class="faq__q" aria-expanded="false">How quickly can you visit my site?</button>
+            <div class="faq__a"><p>Usually within 1 – 2 working days of your request, at a time that suits you.</p></div></div>
+          <div class="faq__item"><button class="faq__q" aria-expanded="false">Are the prices on the website final?</button>
+            <div class="faq__a"><p>They are estimates. Your final, fixed quote depends on exact measurements, materials and lighting choices.</p></div></div>
+          <div class="faq__item"><button class="faq__q" aria-expanded="false">Do you work outside the city?</button>
+            <div class="faq__a"><p>Yes, for larger projects. Travel costs may apply outside our main service area.</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

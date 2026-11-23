@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CeilCraft Studio — Ceiling & Wall Designs</title>
+  <meta name="description" content="Premium ceiling and wall designs: gypsum, POP, wooden, coffered, LED, glass and more. Design, supply and installation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    /* Apply saved language before the page paints (prevents a flash of the wrong layout) */
+    (function () {
+      var h = document.documentElement, l;
+      try { l = new URLSearchParams(location.search).get("lang") || localStorage.getItem("cc-lang"); } catch (e) {}
+      if (l === "ar") { h.lang = "ar"; h.dir = "rtl"; h.classList.add("i18n-pending"); setTimeout(function () { h.classList.add("i18n-ready"); }, 2500); }
+    })();
+  </script>
+</head>
+<body data-page="home">
+  <header id="site-header"></header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" style="background-image:url('images/1648776.jpg?v=2')"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">Ceiling & Wall Design Studio</p>
+        <h1>Look Up.<br /><em>Be Inspired.</em></h1>
+        <p class="hero__lead">From elegant gypsum false ceilings to hand-carved wooden coffers and glowing LED designs, explore a collection made to transform every room.</p>
+        <div class="hero__cta">
+          <a href="designs.html" class="btn btn--gold">Explore Designs</a>
+          <a href="contact.html" class="btn btn--ghost">Get a Free Quote</a>
+        </div>
+        <div class="hero__stats">
+          <div><strong>32</strong><span>Designs</span></div>
+          <div><strong>8</strong><span>Styles</span></div>
+          <div><strong>1,200+</strong><span>Projects</span></div>
+          <div><strong>4.8★</strong><span>Client Rating</span></div>
+        </div>
+      </div>
+      <a href="#styles" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- STYLES -->
+    <section class="section" id="styles">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Browse by Style</p>
+          <h2>Find Your Perfect Ceiling</h2>
+          <p>Eight design styles, from budget-friendly gypsum to heritage-grade carved wood.</p>
+        </div>
+        <div class="cat-grid" id="catCards"></div>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head section-head--split" data-reveal>
+          <div>
+            <p class="eyebrow">Most Popular</p>
+            <h2>Featured Designs</h2>
+          </div>
+          <a href="designs.html" class="btn btn--dark">View all designs →</a>
+        </div>
+        <div class="grid view-tiles" data-gallery="featured" data-limit="6"></div>
+      </div>
+    </section>
+
+    <!-- PROCESS TEASER -->
+    <section class="section">
+      <div class="container split" data-reveal>
+        <div class="split__img">
+          <img src="images/thumbs/8231475.jpg?v=2" alt="Wooden skylight ceiling" loading="lazy" />
+        </div>
+        <div class="split__text">
+          <p class="eyebrow">How It Works</p>
+          <h2>From Idea to Installed in 4 Simple Steps</h2>
+          <ol class="mini-steps">
+            <li><span>01</span>Choose a design you love</li>
+            <li><span>02</span>Free site visit & measurement</li>
+            <li><span>03</span>3D preview & clear quotation</li>
+            <li><span>04</span>Clean, on-time installation</li>
+          </ol>
+          <a href="process.html" class="btn btn--outline">See our full process →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY TEASER -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-head section-head--light" data-reveal>
+          <p class="eyebrow">Why CeilCraft</p>
+          <h2>Built to Impress — and to Last</h2>
+        </div>
+        <div class="icon-grid" data-reveal>
+          <div class="icon-card"><span>◆</span><h3>Premium Materials</h3><p>Branded gypsum, treated timber and certified LEDs.</p></div>
+          <div class="icon-card"><span>✦</span><h3>Skilled Craftsmen</h3><p>Specialists in POP, carving and modern systems.</p></div>
+          <div class="icon-card"><span>₨</span><h3>Transparent Pricing</h3><p>Itemised quotes with no hidden charges.</p></div>
+          <div class="icon-card"><span>⏱</span><h3>On-Time Delivery</h3><p>Clear timelines and daily progress updates.</p></div>
+        </div>
+        <div class="center" data-reveal><a href="why-us.html" class="btn btn--gold">Why clients choose us →</a></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container cta-band__inner" data-reveal>
+        <div>
+          <h2>Ready to transform your ceiling?</h2>
+          <p>Book a free site visit. We'll measure, advise and quote within 48 hours.</p>
+        </div>
+        <a href="contact.html" class="btn btn--gold">Get a Free Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
