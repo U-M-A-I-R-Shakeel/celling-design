@@ -47,6 +47,14 @@
     location.href = u.href;
   }));
 
+  /* Back-to-top button (appears after scrolling) */
+  const toTop = $("#toTop");
+  if (toTop) {
+    const onScroll = () => { toTop.hidden = window.scrollY < 600; };
+    window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+    toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  }
+
   /* Photo lightbox */
   const lb = $("#lightbox");
   if (lb) {
