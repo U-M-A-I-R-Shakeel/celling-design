@@ -22,6 +22,23 @@
     $$(".has-sub.is-open").forEach((li) => { if (!li.contains(e.target) && !nav.classList.contains("is-open")) li.classList.remove("is-open"); });
   });
 
+  /* Light / dark mode (dark = default look; choice is remembered) */
+  const themeBtn = $("#themeBtn");
+  const syncTheme = () => {
+    const light = document.documentElement.dataset.theme === "light";
+    const label = light ? themeBtn.dataset.labelDark : themeBtn.dataset.labelLight;
+    themeBtn.setAttribute("aria-label", label); themeBtn.title = label;
+  };
+  if (themeBtn) {
+    syncTheme();
+    themeBtn.addEventListener("click", () => {
+      const light = document.documentElement.dataset.theme !== "light";
+      if (light) document.documentElement.dataset.theme = "light"; else delete document.documentElement.dataset.theme;
+      try { localStorage.setItem("cc-theme", light ? "light" : "dark"); } catch { /* storage unavailable */ }
+      syncTheme();
+    });
+  }
+
   /* Photo lightbox */
   const lb = $("#lightbox");
   if (lb) {

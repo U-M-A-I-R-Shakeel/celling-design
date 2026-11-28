@@ -32,6 +32,8 @@ const UI = {
   levels: { ar: ["", "اقتصادي", "متوسط", "مرتفع", "فاخر"], en: ["", "Budget", "Mid-range", "Higher", "Premium"] },
   bestFor: { ar: "مناسب لـ:", en: "Best for:" },
   close: { ar: "إغلاق", en: "Close" },
+  themeLight: { ar: "الوضع الفاتح", en: "Light mode" },
+  themeDark: { ar: "الوضع الداكن", en: "Dark mode" },
   form: {
     name: { ar: "الاسم", en: "Name" }, phone: { ar: "رقم الهاتف", en: "Phone" }, city: { ar: "المدينة والمنطقة", en: "City & area" },
     service: { ar: "الخدمة المطلوبة", en: "Service needed" }, size: { ar: "المساحة التقريبية (اختياري)", en: "Approx. size (optional)" },
@@ -259,6 +261,8 @@ function build(lang) {
             <ul class="sub">${n.children.map((c) => `<li><a class="${c.slug === slug ? "is-active" : ""}" href="${href(c.slug)}">${esc(tr(c.label))}</a></li>`).join("")}</ul></li>`;
           }).join("")}
           <li class="lang"><a href="${otherHref(slug)}" hreflang="${OTHER[lang]}" lang="${OTHER[lang]}">${OTHER[lang] === "ar" ? "عربي" : "English"}</a></li>
+          <li class="theme"><button class="theme-btn" id="themeBtn" type="button" aria-label="${tr(UI.themeLight)}" title="${tr(UI.themeLight)}"
+            data-label-light="${tr(UI.themeLight)}" data-label-dark="${tr(UI.themeDark)}"><span class="ico-sun" aria-hidden="true">☀️</span><span class="ico-moon" aria-hidden="true">🌙</span></button></li>
         </ul>
       </nav>
     </div>
@@ -299,6 +303,7 @@ function build(lang) {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <script>try{var t=localStorage.getItem("cc-theme");if(t==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
   <link rel="stylesheet" href="${base}assets/style.css" />
 </head>
 <body>
