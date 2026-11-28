@@ -35,8 +35,8 @@ const UI = {
   themeLight: { ar: "الوضع الفاتح", en: "Light mode" },
   themeDark: { ar: "الوضع الداكن", en: "Dark mode" },
   form: {
-    name: { ar: "الاسم", en: "Name" }, phone: { ar: "رقم الهاتف", en: "Phone" }, city: { ar: "المدينة والمنطقة", en: "City & area" },
-    service: { ar: "الخدمة المطلوبة", en: "Service needed" }, size: { ar: "المساحة التقريبية (اختياري)", en: "Approx. size (optional)" },
+    name: { ar: "الاسم", en: "Name" }, phone: { ar: "رقم الهاتف", en: "Phone" }, city: { ar: "المحافظة والمنطقة", en: "Governorate & area" },
+    service: { ar: "الخدمة المطلوبة", en: "Service needed" }, size: { ar: "المساحة التقريبية بالمتر المربع (اختياري)", en: "Approx. size in m² (optional)" },
     msg: { ar: "تفاصيل إضافية", en: "More details" }, submit: { ar: "إرسال الطلب على الواتساب", en: "Send request on WhatsApp" },
     other: { ar: "أخرى / غير متأكد", en: "Other / not sure" },
     hello: { ar: "مرحباً، أريد عرض سعر لأعمال الجبس بورد.", en: "Hello, I'd like a quote for gypsum board work." },

@@ -42,7 +42,7 @@ const why = (h2) => ({
 
 const areas = {
   type: "areas", h2: L("مناطق الخدمة", "Where we work"),
-  intro: L("نخدم أغلب المدن الرئيسية ونصل إليك بسرعة لتنفيذ أعمال الجبس بورد في الشقق والفلل والمكاتب.", "We cover the main cities and reach you quickly for gypsum work in flats, villas and offices."),
+  intro: L("نخدم جميع محافظات الكويت ونصل إليك بسرعة لتنفيذ أعمال الجبس بورد في الشقق والفلل والمكاتب.", "We cover all of Kuwait's governorates and reach you quickly for gypsum work in flats, villas and offices."),
   note: L("إذا لم تجد منطقتك في القائمة، تواصل معنا على الواتساب – نخدم مناطق كثيرة أخرى.", "Don't see your area? Message us on WhatsApp – we cover many more places."),
   button: { label: L("مشاهدة جميع مناطق الخدمة بالتفصيل", "See all service areas in detail"), href: "areas", style: "outline" },
 };
@@ -69,9 +69,9 @@ const steps = (h2) => ({
 });
 
 const faqGeneral = [
-  { q: L("كم سعر متر الجبس بورد تقريباً؟", "Roughly how much does gypsum board cost per square foot?"),
+  { q: L("كم سعر متر الجبس بورد تقريباً؟", "Roughly how much does gypsum board cost per square metre?"),
     a: L("يعتمد على نوع الشغل (سقف مستوي، متدرّج، قواطع أو ديكور)، ونوع اللوح، وعدد فتحات الإضاءة. أرسل صور المكان ومقاساته على الواتساب ونعطيك سعراً تقريبياً سريعاً، وتفاصيل أكثر في صفحة الأسعار.", "It depends on the job (flat or multi-level ceiling, partitions or decor), the board type and the number of light points. Send photos and sizes on WhatsApp for a quick estimate. There's more detail on our Prices page.") },
-  { q: L("هل الجبس بورد يتحمل الرطوبة والحرارة؟", "Does gypsum board handle heat and humidity?"),
+  { q: L("هل الجبس بورد يتحمل الرطوبة والحرارة في الكويت؟", "Does gypsum board handle Kuwait's heat and humidity?"),
     a: L("نعم، عند استخدام النوع المناسب. للمطابخ والحمامات نستخدم ألواحاً مقاومة للرطوبة (الخضراء)، ونركّب هياكل حديد مجلفن لا تصدأ، مع ترك فواصل تمدد في المساحات الكبيرة.", "Yes, with the right type. For kitchens and bathrooms we use moisture-resistant (green) boards on rust-proof galvanised frames, with expansion joints in large areas.") },
   { q: L("كم يحتاج وقت تركيب الجبس بورد للصالة أو الغرف؟", "How long does a lounge or room take?"),
     a: L("سقف غرفة عادي يحتاج غالباً من يومين إلى ثلاثة أيام، والصالة أو التصاميم المتدرّجة من 4 إلى 7 أيام، حسب المساحة والتفاصيل.", "A standard room ceiling usually takes 2–3 days; a lounge or multi-level design takes 4–7 days, depending on size and detail.") },
@@ -93,7 +93,7 @@ const servicePage = (s, o) => ({
     why(),
     o.photos && { type: "gallery", h2: o.photosTitle, intro: L("بعض الأمثلة من أعمالنا. يمكنك مشاهدة المزيد في صفحة الأعمال.", "A few examples of our work. See more on the Our Work page."), photos: o.photos, limit: 6,
       button: { label: L("شاهد المزيد من الأعمال", "See more of our work"), href: "works" } },
-    { type: "pills", h2: L("نخدم جميع المدن الرئيسية", "We serve all major cities"), note: L("لمزيد من التفاصيل: صفحة مناطق الخدمة", "More details on the Service Areas page"), href: "areas" },
+    { type: "pills", h2: L("نخدم جميع محافظات الكويت", "We serve all Kuwait governorates"), note: L("لمزيد من التفاصيل: صفحة مناطق الخدمة", "More details on the Service Areas page"), href: "areas" },
     steps(),
     { type: "faq", h2: L("أسئلة شائعة", "Frequently asked questions"), items: o.faq },
     cta(),
@@ -107,7 +107,7 @@ const pages = {
     desc: L("اسقف جبس بورد حديثة، قواطع مرتّبة، وديكورات جدران وجدار تلفزيون للشقق والفلل والمكاتب. عرض سعر مجاني خلال 24 ساعة.", "Modern gypsum ceilings, neat partitions and wall & TV-wall decor for flats, villas and offices. Free quote within 24 hours."),
     sections: [
       { type: "hero", h1: L("سيل كرافت للجبس بورد – خبراء اسقف وقواطع وديكورات الجبس بورد", "CeilCraft Gypsum Board – experts in gypsum ceilings, partitions & decor"),
-        lead: [L("اسقف جبس بورد حديثة، قواطع مرتّبة، وديكورات جبس بورد للصالات والغرف والمكاتب في جميع المدن الرئيسية.", "Modern gypsum ceilings, neat partitions and gypsum decor for lounges, bedrooms and offices in all major cities.")] },
+        lead: [L("اسقف جبس بورد حديثة، قواطع مرتّبة، وديكورات جبس بورد للصالات والغرف والمكاتب في جميع مناطق الكويت.", "Modern gypsum ceilings, neat partitions and gypsum decor for lounges, bedrooms and offices across Kuwait.")] },
       { type: "cards", style: "cream", h2: L("خدمات الجبس بورد لدينا", "Our gypsum board services"),
         intro: L("اختر الخدمة المناسبة لك، واضغط عليها لمعرفة التفاصيل والأنواع والأسعار.", "Pick the service you need and tap it for details, types and prices."),
         items: services.map((s) => ({ icon: s.icon, title: s.title, text: s.text, href: s.slug })),
@@ -273,7 +273,7 @@ const pages = {
     photosTitle: L("بعض المشاريع التي نفّذها فريقنا", "Some projects our team has completed"),
     photos: photosOf("gypsum", "pop", "wall"),
     faq: [
-      { q: L("هل المعلم يزور الموقع قبل السعر؟", "Does the craftsman visit before quoting?"), a: L("نعم، الزيارة والقياس مجانية في المدن التي نخدمها.", "Yes, the visit and measuring are free in the cities we cover.") },
+      { q: L("هل المعلم يزور الموقع قبل السعر؟", "Does the craftsman visit before quoting?"), a: L("نعم، الزيارة والقياس مجانية في جميع محافظات الكويت.", "Yes, the visit and measuring are free in all Kuwait governorates.") },
       { q: L("هل تعملون في العطل أو المساء؟", "Do you work evenings or holidays?"), a: L("حسب الاتفاق، ويمكن ترتيب مواعيد خاصة للمحلات والمكاتب.", "By arrangement. Special hours can be set for shops and offices.") },
       faqGeneral[2],
     ],
@@ -295,7 +295,7 @@ const pages = {
           { icon: "🎨", title: L("التصميم", "Design"), text: L("السقف المستوي أوفر من المتدرّج متعدد المستويات.", "A flat ceiling costs less than a multi-level design.") },
           { icon: "💡", title: L("الإضاءة والفتحات", "Lights & openings"), text: L("عدد السبوت لايت والإضاءة المخفية وفتحات المكيّف.", "Number of spotlights, cove lighting and AC openings.") },
           { icon: "🔩", title: L("الهيكل المعدني", "Metal frame"), text: L("سماكة الحديد وكثافته وطريقة التعليق.", "Steel gauge, spacing and the hanging method.") },
-          { icon: "📍", title: L("الموقع والارتفاع", "Location & height"), text: L("المدينة والدور وارتفاع السقف تؤثر على النقل والسقالات.", "City, floor and ceiling height affect transport and scaffolding.") },
+          { icon: "📍", title: L("الموقع والارتفاع", "Location & height"), text: L("المنطقة والدور وارتفاع السقف تؤثر على النقل والسقالات.", "Area, floor and ceiling height affect transport and scaffolding.") },
         ] },
       { type: "tiers", h2: L("أنواع ألواح الجبس بورد – من الأرخص إلى الأغلى", "Gypsum board types – cheapest to most expensive"),
         intro: L("💰 = اقتصادي  ·  💰💰💰💰 = فاخر", "💰 = budget  ·  💰💰💰💰 = premium"),
@@ -314,7 +314,7 @@ const pages = {
       { type: "list", h2: L("أمثلة على طريقة حساب التكلفة", "Examples of how we price"),
         intro: L("هذه أمثلة على طريقة التفكير في السعر، وليست عرض سعر ثابت:", "These show how we think about price; they are not fixed quotes:"),
         items: [
-          L("سقف مستوي لغرفة نوم: نحسب المساحة بالمتر أو القدم مع الهيكل، ثم نضيف عدد فتحات الإضاءة.", "Flat bedroom ceiling: area × rate including frame, plus the number of light points."),
+          L("سقف مستوي لغرفة نوم: نحسب المساحة بالمتر المربع مع الهيكل، ثم نضيف عدد فتحات الإضاءة.", "Flat bedroom ceiling: area in square metres × rate including frame, plus the number of light points."),
           L("سقف صالة بإضاءة مخفية: سعر السقف المستوي + طول خط الإضاءة المخفية + شرائط LED.", "Lounge with cove light: flat-ceiling rate + length of the cove + LED strips."),
           L("قاطع لمكتب: الطول × الارتفاع، مع إضافة الباب والعزل الصوتي إذا طلبته.", "Office partition: length × height, plus a door and sound insulation if needed."),
           L("جدار تلفزيون: حسب عرض الجدار وعدد الرفوف والنيشات والإضاءة.", "TV wall: by wall width plus the number of shelves, niches and lights."),
@@ -333,14 +333,14 @@ const pages = {
   /* ======================= AREAS ======================= */
   areas: {
     title: L("مناطق الخدمة | سيل كرافت للجبس بورد", "Service Areas | CeilCraft Gypsum Board"),
-    desc: L("المدن والمناطق التي نخدمها لأعمال الجبس بورد.", "The cities and areas we cover for gypsum board work."),
+    desc: L("محافظات ومناطق الكويت التي نخدمها لأعمال الجبس بورد.", "The Kuwait governorates and areas we cover for gypsum board work."),
     sections: [
       { type: "hero", h1: L("مناطق الخدمة – نصل إليك أينما كنت", "Service areas – we come to you"),
-        lead: [L("ننفّذ أعمال الجبس بورد في أغلب المدن الرئيسية، مع زيارة مجانية لأخذ المقاسات.", "We do gypsum work across the main cities, with a free visit to measure.")] },
+        lead: [L("ننفّذ أعمال الجبس بورد في جميع محافظات الكويت، مع زيارة مجانية لأخذ المقاسات.", "We do gypsum work in every governorate of Kuwait, with a free visit to measure.")] },
       { ...areas, button: null },
       { type: "list", h2: L("كيف نرتّب الزيارة؟", "How we arrange your visit"),
         items: [
-          L("أرسل اسم المدينة والمنطقة وصور المكان على الواتساب.", "Send your city, area and photos of the space on WhatsApp."),
+          L("أرسل اسم المحافظة والمنطقة وصور المكان على الواتساب.", "Send your governorate, area and photos of the space on WhatsApp."),
           L("نحدد موعد زيارة يناسبك خلال يوم إلى يومين عمل.", "We book a visit that suits you within 1–2 working days."),
           L("يأخذ المعلم المقاسات ويقترح أفضل حل حسب ميزانيتك.", "Our craftsman measures and suggests the best option for your budget."),
           L("تستلم عرض السعر ومدة التنفيذ خلال 24 ساعة من الزيارة.", "You get the quote and timeline within 24 hours of the visit."),
@@ -383,7 +383,7 @@ const pages = {
         lead: [L("فريق متخصص في اسقف وقواطع وديكورات الجبس بورد، نهتم بالتشطيب المرتب والالتزام بالمواعيد والسعر الواضح.", "A team specialising in gypsum ceilings, partitions and decor, focused on neat finishing, punctuality and clear prices.")] },
       { type: "text", h2: L("قصتنا", "Our story"),
         paras: [
-          L("بدأنا بفريق صغير من معلمي الجبس، واليوم ننفّذ مشاريع في الشقق والفلل والمكاتب والمحلات في عدة مدن.", "We started as a small team of gypsum craftsmen. Today we deliver projects in flats, villas, offices and shops across several cities."),
+          L("بدأنا بفريق صغير من معلمي الجبس، واليوم ننفّذ مشاريع في الشقق والفلل والمكاتب والمحلات في مختلف مناطق الكويت.", "We started as a small team of gypsum craftsmen. Today we deliver projects in flats, villas, offices and shops all over Kuwait."),
           L("هدفنا بسيط: شغل مستقيم ونظيف، ومواد أصلية، وسعر متفق عليه قبل البدء، وتواصل سهل على الواتساب طوال المشروع.", "Our goal is simple: straight, clean work, genuine materials, a price agreed before we start, and easy WhatsApp contact throughout."),
         ] },
       why(L("قيمنا في العمل", "How we work")),
@@ -408,7 +408,7 @@ const pages = {
         items: [
           L("صوّر المكان (الصالة، الغرفة، الممر أو الجدار) من زاويتين أو ثلاث.", "Photograph the space (lounge, room, corridor or wall) from 2–3 angles."),
           L("اكتب ماذا تريد: سقف جبس، قاطع، ديكور جدار، أو شغل كامل للبيت.", "Write what you want: a ceiling, a partition, a wall feature, or a full home job."),
-          L("اذكر المدينة والمنطقة.", "Mention your city and area."),
+          L("اذكر المحافظة والمنطقة (مثلاً: حولي – السالمية).", "Mention your governorate and area (e.g. Hawalli – Salmiya)."),
           L("أرسل الصور والمعلومات على الواتساب، ونرجع لك بسعر تقريبي ووقت التنفيذ.", "Send the photos and details on WhatsApp and we'll reply with an estimate and timeline."),
         ] },
     ],
