@@ -9,7 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
-  <script>try{var t=localStorage.getItem("cc-theme");if(t==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+  <script>/* theme: ?theme= from the language switch wins, then the saved choice */
+  (function(){var d=document.documentElement,t=null,s=location.search;try{t=new URLSearchParams(s).get("theme")}catch(e){}
+  try{if(t==="light"||t==="dark")localStorage.setItem("cc-theme",t);else t=localStorage.getItem("cc-theme")}catch(e){}
+  if(t==="light")d.dataset.theme="light";
+  if(/[?&]theme=/.test(s))try{history.replaceState(null,"",location.pathname+location.hash)}catch(e){}})();</script>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -17,12 +21,12 @@
   <a class="skip" href="#main">تخطي إلى المحتوى</a>
   <header class="site-header">
     <div class="wrap site-header__inner">
-      <a class="brand" href="./">سيل كرافت للجبس بورد</a>
+      <a class="brand" href="index.html">سيل كرافت للجبس بورد</a>
       <a class="phone-pill" href="tel:+96500000000" aria-label="اتصل الآن">📞</a>
       <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav" aria-label="القائمة"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="siteNav">
         <ul>
-          <li><a class="" href="./">الرئيسية</a></li><li class="has-sub"><a class="" href="services.html">خدماتنا</a><button class="sub-btn" aria-label="خدماتنا" aria-expanded="false">▾</button>
+          <li><a class="" href="index.html">الرئيسية</a></li><li class="has-sub"><a class="" href="services.html">خدماتنا</a><button class="sub-btn" aria-label="خدماتنا" aria-expanded="false">▾</button>
             <ul class="sub"><li><a class="" href="gypsum-ceilings.html">اسقف جبس بورد</a></li><li><a class="" href="partitions.html">قواطع جبس بورد</a></li><li><a class="" href="wall-decor.html">ديكورات الجدران وجدار التلفزيون</a></li><li><a class="" href="classic-wood-ceilings.html">اسقف كلاسيك وخشبية</a></li><li><a class="" href="installation-team.html">معلم جبس بورد وفريق التركيب</a></li></ul></li><li><a class="is-active" href="prices.html">الأسعار</a></li><li><a class="" href="areas.html">مناطق الخدمة</a></li><li><a class="" href="works.html">الأعمال</a></li><li><a class="" href="about.html">من نحن</a></li><li><a class="" href="contact.html">اتصل بنا</a></li>
           <li class="lang"><a href="en/prices.html" hreflang="en" lang="en">English</a></li>
           <li class="theme"><button class="theme-btn" id="themeBtn" type="button" aria-label="الوضع الفاتح" title="الوضع الفاتح"

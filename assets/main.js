@@ -39,6 +39,14 @@
     });
   }
 
+  /* Language switch keeps the current theme: pass it along in the link */
+  $$(".lang a").forEach((a) => a.addEventListener("click", (e) => {
+    e.preventDefault();
+    const u = new URL(a.getAttribute("href"), location.href);
+    u.searchParams.set("theme", document.documentElement.dataset.theme === "light" ? "light" : "dark");
+    location.href = u.href;
+  }));
+
   /* Photo lightbox */
   const lb = $("#lightbox");
   if (lb) {

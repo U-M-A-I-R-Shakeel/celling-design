@@ -55,11 +55,11 @@ function build(lang) {
   const tr = (v) => (v && typeof v === "object" && "ar" in v ? v[lang] : v);
   const base = lang === SITE.defaultLang ? "" : "../";
   const dir = lang === SITE.defaultLang ? ROOT : path.join(ROOT, lang);
-  const href = (slug) => (slug === "index" ? "./" : `${slug}.html`);
+  const href = (slug) => `${slug}.html`;
   const otherHref = (slug) => {
     const toDefault = OTHER[lang] === SITE.defaultLang;
     const prefix = toDefault ? "../" : `${OTHER[lang]}/`;
-    return prefix + (slug === "index" ? "" : `${slug}.html`) || "./";
+    return `${prefix}${slug}.html`;
   };
   const photo = (p) => ({ ...p, title: p[lang].title, short: p[lang].short });
   const pickPhotos = (sel) => {
@@ -79,7 +79,7 @@ function build(lang) {
   const R = {
     hero: (s, page) => `
     <section class="box hero">
-      ${page.crumb ? `<nav class="crumbs" aria-label="breadcrumb"><a href="./">${tr(UI.home)}</a> / ${page.crumb.map((c) => `<a href="${href(c.slug)}">${esc(tr(c.label))}</a> / `).join("")}<span>${esc(tr(page.navLabel || ""))}</span></nav>` : ""}
+      ${page.crumb ? `<nav class="crumbs" aria-label="breadcrumb"><a href="index.html">${tr(UI.home)}</a> / ${page.crumb.map((c) => `<a href="${href(c.slug)}">${esc(tr(c.label))}</a> / `).join("")}<span>${esc(tr(page.navLabel || ""))}</span></nav>` : ""}
       <h1>${esc(tr(s.h1))}</h1>
       ${(s.lead || []).map((p) => `<p class="intro">${esc(tr(p))}</p>`).join("")}
       <div class="badges">${SITE.badges.map((b) => `<span class="badge">${esc(tr(b))}</span>`).join("")}</div>
@@ -249,7 +249,7 @@ function build(lang) {
   <a class="skip" href="#main">${tr(UI.skip)}</a>
   <header class="site-header">
     <div class="wrap site-header__inner">
-      <a class="brand" href="./">${esc(tr(SITE.name))}</a>
+      <a class="brand" href="index.html">${esc(tr(SITE.name))}</a>
       <a class="phone-pill" href="${tel}" aria-label="${tr(UI.callNow)}">📞</a>
       <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav" aria-label="${tr(UI.menu)}"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="siteNav">
@@ -303,7 +303,11 @@ function build(lang) {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
-  <script>try{var t=localStorage.getItem("cc-theme");if(t==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+  <script>/* theme: ?theme= from the language switch wins, then the saved choice */
+  (function(){var d=document.documentElement,t=null,s=location.search;try{t=new URLSearchParams(s).get("theme")}catch(e){}
+  try{if(t==="light"||t==="dark")localStorage.setItem("cc-theme",t);else t=localStorage.getItem("cc-theme")}catch(e){}
+  if(t==="light")d.dataset.theme="light";
+  if(/[?&]theme=/.test(s))try{history.replaceState(null,"",location.pathname+location.hash)}catch(e){}})();</script>
   <link rel="stylesheet" href="${base}assets/style.css" />
 </head>
 <body>
