@@ -1,129 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CeilCraft Studio — Ceiling & Wall Designs</title>
-  <meta name="description" content="Premium ceiling and wall designs: gypsum, POP, wooden, coffered, LED, glass and more. Design, supply and installation." />
+  <title>سيل كرافت للجبس بورد – اسقف، قواطع وديكورات جبس بورد</title>
+  <meta name="description" content="اسقف جبس بورد حديثة، قواطع مرتّبة، وديكورات جدران وجدار تلفزيون للشقق والفلل والمكاتب. عرض سعر مجاني خلال 24 ساعة." />
+  <link rel="alternate" hreflang="en" href="en/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script>
-    /* Apply saved language before the page paints (prevents a flash of the wrong layout) */
-    (function () {
-      var h = document.documentElement, l;
-      try { l = new URLSearchParams(location.search).get("lang") || localStorage.getItem("cc-lang"); } catch (e) {}
-      if (l === "ar") { h.lang = "ar"; h.dir = "rtl"; h.classList.add("i18n-pending"); setTimeout(function () { h.classList.add("i18n-ready"); }, 2500); }
-    })();
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-<body data-page="home">
-  <header id="site-header"></header>
+<body>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__bg" style="background-image:url('images/1648776.jpg?v=2')"></div>
-      <div class="hero__overlay"></div>
-      <div class="container hero__content">
-        <p class="eyebrow">Ceiling & Wall Design Studio</p>
-        <h1>Look Up.<br /><em>Be Inspired.</em></h1>
-        <p class="hero__lead">From elegant gypsum false ceilings to hand-carved wooden coffers and glowing LED designs, explore a collection made to transform every room.</p>
-        <div class="hero__cta">
-          <a href="designs.html" class="btn btn--gold">Explore Designs</a>
-          <a href="contact.html" class="btn btn--ghost">Get a Free Quote</a>
-        </div>
-        <div class="hero__stats">
-          <div><strong>32</strong><span>Designs</span></div>
-          <div><strong>8</strong><span>Styles</span></div>
-          <div><strong>1,200+</strong><span>Projects</span></div>
-          <div><strong>4.8★</strong><span>Client Rating</span></div>
-        </div>
-      </div>
-      <a href="#styles" class="hero__scroll" aria-label="Scroll down"><span></span></a>
-    </section>
+  <a class="skip" href="#main">تخطي إلى المحتوى</a>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="./">سيل كرافت للجبس بورد</a>
+      <a class="phone-pill" href="tel:+923000000000" aria-label="اتصل الآن">📞</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav" aria-label="القائمة"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="siteNav">
+        <ul>
+          <li><a class="is-active" href="./">الرئيسية</a></li><li class="has-sub"><a class="" href="services.html">خدماتنا</a><button class="sub-btn" aria-label="خدماتنا" aria-expanded="false">▾</button>
+            <ul class="sub"><li><a class="" href="gypsum-ceilings.html">اسقف جبس بورد</a></li><li><a class="" href="partitions.html">قواطع جبس بورد</a></li><li><a class="" href="wall-decor.html">ديكورات الجدران وجدار التلفزيون</a></li><li><a class="" href="classic-wood-ceilings.html">اسقف كلاسيك وخشبية</a></li><li><a class="" href="installation-team.html">معلم جبس بورد وفريق التركيب</a></li></ul></li><li><a class="" href="prices.html">الأسعار</a></li><li><a class="" href="areas.html">مناطق الخدمة</a></li><li><a class="" href="works.html">الأعمال</a></li><li><a class="" href="about.html">من نحن</a></li><li><a class="" href="contact.html">اتصل بنا</a></li>
+          <li class="lang"><a href="en/" hreflang="en" lang="en">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
 
-    <!-- STYLES -->
-    <section class="section" id="styles">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <p class="eyebrow">Browse by Style</p>
-          <h2>Find Your Perfect Ceiling</h2>
-          <p>Eight design styles, from budget-friendly gypsum to heritage-grade carved wood.</p>
-        </div>
-        <div class="cat-grid" id="catCards"></div>
+    <section class="box hero">
+      
+      <h1>سيل كرافت للجبس بورد – خبراء اسقف وقواطع وديكورات الجبس بورد</h1>
+      <p class="intro">اسقف جبس بورد حديثة، قواطع مرتّبة، وديكورات جبس بورد للصالات والغرف والمكاتب في جميع المدن الرئيسية.</p>
+      <div class="badges"><span class="badge">ضمان 10 سنوات</span><span class="badge">عرض سعر مجاني خلال 24 ساعة</span></div>
+      
+      <div class="btns">
+        <a class="btn btn--yellow" href="tel:+923000000000">اتصال: <span dir="ltr">0300 0000000</span></a>
+        <a class="btn btn--outline" href="https://wa.me/923000000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AC%D8%A8%D8%B3%20%D8%A8%D9%88%D8%B1%D8%AF." target="_blank" rel="noopener">واتساب</a>
       </div>
     </section>
 
-    <!-- FEATURED -->
-    <section class="section section--tint">
-      <div class="container">
-        <div class="section-head section-head--split" data-reveal>
-          <div>
-            <p class="eyebrow">Most Popular</p>
-            <h2>Featured Designs</h2>
-          </div>
-          <a href="designs.html" class="btn btn--dark">View all designs →</a>
-        </div>
-        <div class="grid view-tiles" data-gallery="featured" data-limit="6"></div>
+    <section class="box">
+      <h2>خدمات الجبس بورد لدينا</h2><p class="intro">اختر الخدمة المناسبة لك، واضغط عليها لمعرفة التفاصيل والأنواع والأسعار.</p>
+      <div class="grid grid--2 cards-cream">
+        <a class="card" href="gypsum-ceilings.html"><span class="icon" aria-hidden="true">🪜</span><h3>اسقف جبس بورد</h3><p>اسقف جبس بورد مستوية ومعلّقة ومتدرّجة للصالة والغرف والمكاتب، مع إضاءة مخفية وسبوت لايت.</p></a><a class="card" href="partitions.html"><span class="icon" aria-hidden="true">🚪</span><h3>قواطع جبس بورد</h3><p>تقسيم الغرف والمكاتب والعيادات بقواطع جبس بورد مرتّبة، مع عزل صوتي وفتحات أبواب وزجاج.</p></a><a class="card" href="wall-decor.html"><span class="icon" aria-hidden="true">🎨</span><h3>ديكورات الجدران وجدار التلفزيون</h3><p>ديكورات جبس بورد للجدران وجدار التلفزيون، مع رفوف ونيشات وإضاءة مخفية حسب ذوقك.</p></a><a class="card" href="classic-wood-ceilings.html"><span class="icon" aria-hidden="true">🏛️</span><h3>اسقف كلاسيك وخشبية</h3><p>اسقف جبس كلاسيكية بالكرانيش والزخارف، واسقف خشبية ومجوّفة (كوفريد) للمجالس والفلل.</p></a><a class="card" href="installation-team.html"><span class="icon" aria-hidden="true">👷‍♂️</span><h3>معلم جبس بورد وفريق التركيب</h3><p>معلم جبس بورد وفريق تركيب لتنفيذ مشاريع كاملة للشقق والفلل والمكاتب، وتسليم جاهز للدهان.</p></a>
+      </div>
+      <div class="center"><a class="btn btn--yellow btn--auto" href="services.html">شاهد جميع خدماتنا</a></div>
+    </section>
+
+    <section class="box">
+      <h2>لماذا تختار سيل كرافت؟</h2><p class="intro">نحرص على شغل جبس بورد مرتب ونظيف، مع التزام بالمواعيد وأسعار واضحة تناسب ميزانيتك.</p>
+      <div class="grid grid--2 cards-dark align-start">
+        <div class="card"><span class="icon" aria-hidden="true">⭐</span><h3>خبرة في الجبس بورد</h3><p>تنفيذ أعمال جبس بورد في الشقق والفلل والمكاتب بمستوى ثابت.</p></div><div class="card"><span class="icon" aria-hidden="true">🧼</span><h3>شغل مرتب ونظيف</h3><p>نغطي الأثاث والأرضيات وننظف المكان يومياً أثناء وبعد العمل.</p></div><div class="card"><span class="icon" aria-hidden="true">🧱</span><h3>مواد وهياكل قوية</h3><p>ألواح جبس بورد أصلية وهياكل حديد مجلفن تتحمل الرطوبة والحرارة.</p></div><div class="card"><span class="icon" aria-hidden="true">⏰</span><h3>التزام بالموعد والسعر</h3><p>موعد واضح وسعر متفق عليه قبل بدء الشغل، بدون مفاجآت.</p></div>
+      </div>
+      
+    </section>
+
+    <section class="box">
+      <h2>مناطق الخدمة</h2><p class="intro">نخدم أغلب المدن الرئيسية ونصل إليك بسرعة لتنفيذ أعمال الجبس بورد في الشقق والفلل والمكاتب.</p>
+      <div class="grid grid--2 cards-dark align-start">
+        <div class="card"><h3 class="yellow">لاهور</h3><p>دي إتش إيه، جلبرج، جوهر تاون، موديل تاون، بحرية تاون، وابدا تاون وما حولها.</p></div><div class="card"><h3 class="yellow">إسلام آباد وراولبندي</h3><p>قطاعات F وG، E-11، دي إتش إيه، بحرية تاون، جلبرج جرينز، صدر.</p></div><div class="card"><h3 class="yellow">كراتشي</h3><p>دي إتش إيه، كليفتون، جلشن إقبال، بي إي سي إتش إس، نارث ناظم آباد، بحرية تاون.</p></div><div class="card"><h3 class="yellow">فيصل آباد</h3><p>مدينة تاون، بيبلز كولوني، طريق القناة، طريق سوسن وما جاورها.</p></div><div class="card"><h3 class="yellow">ملتان</h3><p>الكانت، جلجشت، شاه ركن عالم، طريق بوسن ومناطق قريبة.</p></div><div class="card"><h3 class="yellow">جوجرانوالا وسيالكوت</h3><p>ساتلايت تاون، موديل تاون، الكانت، طريق الدفاع وغيرها.</p></div>
+      </div>
+      <p class="note">إذا لم تجد منطقتك في القائمة، تواصل معنا على الواتساب – نخدم مناطق كثيرة أخرى.</p>
+      <div class="center"><a class="btn btn--outline btn--auto" href="areas.html">مشاهدة جميع مناطق الخدمة بالتفصيل</a></div>
+    </section>
+
+    <section class="box">
+      <h2>معرض أعمال الجبس بورد</h2><p class="intro">بعض نماذج الاسقف والديكورات التي نفّذناها لعملائنا.</p>
+      <div class="gallery grid grid--3">
+        
+        <figure class="shot">
+          <a href="images/1648776.jpg?v=2" class="shot__img" data-lightbox data-caption="سقف جبس بطبقتين مع إضاءة مخفية">
+            <img src="images/thumbs/1648776.jpg?v=2" alt="سقف جبس بطبقتين مع إضاءة مخفية" loading="lazy" />
+          </a>
+          <figcaption><h3>سقف جبس بطبقتين مع إضاءة مخفية</h3><p>مستويان متدرجان من الجبس مع إضاءة مخفية ناعمة على الأطراف.</p>
+          <a class="more" href="gypsum-ceilings.html">مشاهدة التفاصيل ←</a></figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="images/8232455.jpg?v=2" class="shot__img" data-lightbox data-caption="سقف جبس فيكتوري بميدالية مزخرفة">
+            <img src="images/thumbs/8232455.jpg?v=2" alt="سقف جبس فيكتوري بميدالية مزخرفة" loading="lazy" />
+          </a>
+          <figcaption><h3>سقف جبس فيكتوري بميدالية مزخرفة</h3><p>ميدالية جبسية مصنوعة يدويًا بتفاصيل ذهبية حول الثريا.</p>
+          <a class="more" href="classic-wood-ceilings.html">مشاهدة التفاصيل ←</a></figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="images/276724.jpg?v=2" class="shot__img" data-lightbox data-caption="سقف بإطار خشبي محيطي">
+            <img src="images/thumbs/276724.jpg?v=2" alt="سقف بإطار خشبي محيطي" loading="lazy" />
+          </a>
+          <figcaption><h3>سقف بإطار خشبي محيطي</h3><p>إطار خشبي فاخر مع فجوة مضيئة حول وسط منقوش.</p>
+          <a class="more" href="classic-wood-ceilings.html">مشاهدة التفاصيل ←</a></figcaption>
+        </figure>
+      </div>
+      <div class="center"><a class="btn btn--yellow btn--auto" href="works.html">شاهد المزيد من الأعمال</a></div>
+    </section>
+
+    <section class="box">
+      <h2>أسئلة شائعة عن الجبس بورد</h2><p class="intro">هذه بعض الأسئلة التي تتكرر من العملاء عن الأسعار والتنفيذ:</p>
+      <div class="faq">
+        <details><summary>كم سعر متر الجبس بورد تقريباً؟</summary><p>يعتمد على نوع الشغل (سقف مستوي، متدرّج، قواطع أو ديكور)، ونوع اللوح، وعدد فتحات الإضاءة. أرسل صور المكان ومقاساته على الواتساب ونعطيك سعراً تقريبياً سريعاً، وتفاصيل أكثر في صفحة الأسعار.</p></details><details><summary>هل الجبس بورد يتحمل الرطوبة والحرارة؟</summary><p>نعم، عند استخدام النوع المناسب. للمطابخ والحمامات نستخدم ألواحاً مقاومة للرطوبة (الخضراء)، ونركّب هياكل حديد مجلفن لا تصدأ، مع ترك فواصل تمدد في المساحات الكبيرة.</p></details><details><summary>كم يحتاج وقت تركيب الجبس بورد للصالة أو الغرف؟</summary><p>سقف غرفة عادي يحتاج غالباً من يومين إلى ثلاثة أيام، والصالة أو التصاميم المتدرّجة من 4 إلى 7 أيام، حسب المساحة والتفاصيل.</p></details><details><summary>هل يمكن تعديل أو إزالة الجبس بورد لاحقاً؟</summary><p>نعم، من مميزات الجبس بورد أنه سهل التعديل. يمكن فتح فتحة جديدة للإضاءة أو المكيّف، أو إزالة قاطع، بدون تكسير كبير.</p></details>
+        <div class="faq__more">إذا كان عندك سؤال آخر، تواصل معنا مباشرة على <a href="tel:+923000000000" dir="ltr">0300 0000000</a> أو أرسل سؤالك وصور المكان على <a href="https://wa.me/923000000000" target="_blank" rel="noopener">واتساب</a>.</div>
+      </div>
+      
+      <div class="btns btns--inline">
+        <a class="btn btn--yellow" href="tel:+923000000000">اتصال: <span dir="ltr">0300 0000000</span></a>
+        <a class="btn btn--outline" href="https://wa.me/923000000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AC%D8%A8%D8%B3%20%D8%A8%D9%88%D8%B1%D8%AF." target="_blank" rel="noopener">واتساب</a>
       </div>
     </section>
 
-    <!-- PROCESS TEASER -->
-    <section class="section">
-      <div class="container split" data-reveal>
-        <div class="split__img">
-          <img src="images/thumbs/8231475.jpg?v=2" alt="Wooden skylight ceiling" loading="lazy" />
-        </div>
-        <div class="split__text">
-          <p class="eyebrow">How It Works</p>
-          <h2>From Idea to Installed in 4 Simple Steps</h2>
-          <ol class="mini-steps">
-            <li><span>01</span>Choose a design you love</li>
-            <li><span>02</span>Free site visit & measurement</li>
-            <li><span>03</span>3D preview & clear quotation</li>
-            <li><span>04</span>Clean, on-time installation</li>
-          </ol>
-          <a href="process.html" class="btn btn--outline">See our full process →</a>
-        </div>
+    <section class="box">
+      <h2>آراء بعض عملائنا</h2><p class="intro">ملاحظات من عملاء بعد تنفيذ اسقف وقواطع وديكورات جبس بورد في مناطق مختلفة.</p>
+      <div class="reviews">
+        <blockquote class="review"><div class="stars" aria-label="5/5">★★★★★</div><p>شغل سقف الجبس في الصالة كان مرتب جداً، السقف مستقيم والإضاءة المخفية طلعت مثل ما طلبنا. التزموا بالموعد والتعامل محترم.</p><cite>عميل في جلبرج – سقف جبس للصالة</cite></blockquote><blockquote class="review"><div class="stars" aria-label="5/5">★★★★★</div><p>عملوا قواطع جبس لتقسيم المكتب إلى غرف صغيرة. الشغل كان سريع ونظيف والقواطع ثابتة، ورجعنا نتعامل معهم في مشروع ثاني.</p><cite>عميل في جوهر تاون – قواطع لمكتب</cite></blockquote><blockquote class="review"><div class="stars" aria-label="5/5">★★★★★</div><p>جدار التلفزيون طلع أجمل من الصورة اللي أرسلناها، وعدّلوا بعض التفاصيل في الموقع حتى يناسب مساحة الغرفة.</p><cite>عميل في دي إتش إيه – ديكور جدار تلفزيون</cite></blockquote>
       </div>
-    </section>
-
-    <!-- WHY TEASER -->
-    <section class="section section--dark">
-      <div class="container">
-        <div class="section-head section-head--light" data-reveal>
-          <p class="eyebrow">Why CeilCraft</p>
-          <h2>Built to Impress — and to Last</h2>
-        </div>
-        <div class="icon-grid" data-reveal>
-          <div class="icon-card"><span>◆</span><h3>Premium Materials</h3><p>Branded gypsum, treated timber and certified LEDs.</p></div>
-          <div class="icon-card"><span>✦</span><h3>Skilled Craftsmen</h3><p>Specialists in POP, carving and modern systems.</p></div>
-          <div class="icon-card"><span>₨</span><h3>Transparent Pricing</h3><p>Itemised quotes with no hidden charges.</p></div>
-          <div class="icon-card"><span>⏱</span><h3>On-Time Delivery</h3><p>Clear timelines and daily progress updates.</p></div>
-        </div>
-        <div class="center" data-reveal><a href="why-us.html" class="btn btn--gold">Why clients choose us →</a></div>
+      <div class="inner">
+        <p>بعد انتهاء شغلك، أرسل لنا تقييمك على الواتساب وسننشره بدون ذكر الاسم الكامل.</p>
+        
+      <div class="btns btns--inline">
+        <a class="btn btn--yellow" href="tel:+923000000000">اتصال: <span dir="ltr">0300 0000000</span></a>
+        <a class="btn btn--outline" href="https://wa.me/923000000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AC%D8%A8%D8%B3%20%D8%A8%D9%88%D8%B1%D8%AF." target="_blank" rel="noopener">واتساب</a>
       </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-band">
-      <div class="container cta-band__inner" data-reveal>
-        <div>
-          <h2>Ready to transform your ceiling?</h2>
-          <p>Book a free site visit. We'll measure, advise and quote within 48 hours.</p>
-        </div>
-        <a href="contact.html" class="btn btn--gold">Get a Free Quote</a>
       </div>
     </section>
   </main>
 
-  <footer id="site-footer"></footer>
-
-  <script src="js/data.js"></script>
-  <script src="js/i18n.js"></script>
-  <script src="js/layout.js"></script>
-  <script src="js/gallery.js"></script>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-lead">اتصل بنا اليوم للحصول على <b>تسعيرة مجانية</b> لأعمال الجبس بورد.</p>
+      <dl class="footer-info">
+        <dt>الهاتف (اتصال مباشر):</dt><dd><a href="tel:+923000000000" dir="ltr">0300 0000000</a></dd>
+        <dt>واتساب:</dt><dd><a href="https://wa.me/923000000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AC%D8%A8%D8%B3%20%D8%A8%D9%88%D8%B1%D8%AF." target="_blank" rel="noopener">إرسال على واتساب</a></dd>
+        <dt>أوقات العمل:</dt><dd>من 9 صباحاً إلى 9 مساءً، من السبت إلى الخميس</dd>
+        <dt>البريد الإلكتروني:</dt><dd><a href="mailto:hello@ceilcraft.studio">hello@ceilcraft.studio</a></dd>
+        <dt>العنوان:</dt><dd>مين بوليفارد، جلبرج، لاهور</dd>
+      </dl>
+      <ul class="socials"><li><a href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="#" target="_blank" rel="noopener">Facebook</a></li><li><a href="#" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://wa.me/923000000000" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+      <p class="copy">© 2026 سيل كرافت للجبس بورد — جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  <a class="fab" href="tel:+923000000000" aria-label="اتصل الآن"><span class="fab__tip">اتصل الآن</span><span class="fab__btn">📞</span></a>
+  <div class="lightbox" id="lightbox" hidden><button class="lightbox__close" aria-label="إغلاق">×</button><figure><img alt="" /><figcaption></figcaption></figure></div>
+  <script src="assets/main.js" defer></script>
 </body>
 </html>

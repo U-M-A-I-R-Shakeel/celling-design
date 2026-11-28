@@ -1,0 +1,450 @@
+[
+ {
+  "id": "lightning-line-led",
+  "image": "7005461",
+  "category": "led",
+  "type": "Ceiling",
+  "en": {
+   "title": "Lightning Line LED Ceiling",
+   "short": "Bold, criss-crossing recessed LED lines that turn a flat ceiling into a statement."
+  },
+  "ar": {
+   "title": "سقف LED بخطوط البرق",
+   "short": "خطوط LED غائرة ومتقاطعة بجرأة تحوّل السقف المسطّح إلى تحفة لافتة."
+  }
+ },
+ {
+  "id": "double-layer-gypsum",
+  "image": "1648776",
+  "category": "gypsum",
+  "type": "Ceiling",
+  "en": {
+   "title": "Double-Layer Gypsum with Cove Light",
+   "short": "Two stepped gypsum levels with soft hidden cove lighting around the edge."
+  },
+  "ar": {
+   "title": "سقف جبس بطبقتين مع إضاءة مخفية",
+   "short": "مستويان متدرجان من الجبس مع إضاءة مخفية ناعمة على الأطراف."
+  }
+ },
+ {
+  "id": "wood-frame-cove",
+  "image": "276724",
+  "category": "wooden",
+  "type": "Ceiling",
+  "en": {
+   "title": "Wooden Frame Peripheral Ceiling",
+   "short": "Rich wooden border with a glowing light gap around a textured centre."
+  },
+  "ar": {
+   "title": "سقف بإطار خشبي محيطي",
+   "short": "إطار خشبي فاخر مع فجوة مضيئة حول وسط منقوش."
+  }
+ },
+ {
+  "id": "open-plan-recessed",
+  "image": "1571460",
+  "category": "gypsum",
+  "type": "Ceiling",
+  "en": {
+   "title": "Open-Plan Recessed Spotlight Ceiling",
+   "short": "Minimal flat ceiling with neat rows of recessed spotlights and a soft edge glow."
+  },
+  "ar": {
+   "title": "سقف بسبوتات غائرة للمساحات المفتوحة",
+   "short": "سقف مسطّح بسيط بصفوف أنيقة من السبوتات الغائرة وتوهج ناعم على الأطراف."
+  }
+ },
+ {
+  "id": "kitchen-downlight",
+  "image": "3214064",
+  "category": "led",
+  "type": "Ceiling",
+  "en": {
+   "title": "Kitchen Downlight Ceiling",
+   "short": "Moisture-resistant ceiling with bright downlights and pendants over the island."
+  },
+  "ar": {
+   "title": "سقف مطبخ بإضاءة داون لايت",
+   "short": "سقف مقاوم للرطوبة بإضاءة ساطعة وثريات معلقة فوق الجزيرة."
+  }
+ },
+ {
+  "id": "round-panel-bedroom",
+  "image": "6585757",
+  "category": "led",
+  "type": "Ceiling",
+  "en": {
+   "title": "Round LED Panel Bedroom Ceiling",
+   "short": "Calm bedroom ceiling with a glowing round panel and soft accent spots."
+  },
+  "ar": {
+   "title": "سقف غرفة نوم بلوحة LED دائرية",
+   "short": "سقف هادئ لغرفة النوم بلوحة دائرية متوهجة وسبوتات ناعمة."
+  }
+ },
+ {
+  "id": "victorian-medallion",
+  "image": "8232455",
+  "category": "pop",
+  "type": "Ceiling",
+  "en": {
+   "title": "Victorian POP Medallion Ceiling",
+   "short": "Hand-crafted POP rose medallion with gold detailing around the chandelier."
+  },
+  "ar": {
+   "title": "سقف جبس فيكتوري بميدالية مزخرفة",
+   "short": "ميدالية جبسية مصنوعة يدويًا بتفاصيل ذهبية حول الثريا."
+  }
+ },
+ {
+  "id": "palace-coffered-wood",
+  "image": "19987317",
+  "category": "coffered",
+  "type": "Ceiling",
+  "en": {
+   "title": "Palace Carved Coffered Ceiling",
+   "short": "Deep carved wooden coffers with rosette centres - a true heritage masterpiece."
+  },
+  "ar": {
+   "title": "سقف قصور خشبي منحوت بتجاويف",
+   "short": "تجاويف خشبية عميقة منحوتة بوردات في المنتصف — تحفة تراثية حقيقية."
+  }
+ },
+ {
+  "id": "baroque-gold",
+  "image": "13927659",
+  "category": "pop",
+  "type": "Ceiling",
+  "en": {
+   "title": "Baroque Gold & Ivory Ceiling",
+   "short": "Grand palace-style arches, columns and gold ornaments for halls and lobbies."
+  },
+  "ar": {
+   "title": "سقف باروكي بالذهبي والعاجي",
+   "short": "أقواس وأعمدة وزخارف ذهبية بطراز القصور للقاعات والردهات."
+  }
+ },
+ {
+  "id": "ottoman-sunburst",
+  "image": "35117617",
+  "category": "pop",
+  "type": "Ceiling",
+  "en": {
+   "title": "Ottoman Sunburst Painted Ceiling",
+   "short": "Hand-painted panels with a carved sunburst rose above a crystal chandelier."
+  },
+  "ar": {
+   "title": "سقف عثماني مرسوم بوردة شمسية",
+   "short": "ألواح مرسومة يدويًا مع وردة شمسية منحوتة فوق ثريا كريستال."
+  }
+ },
+ {
+  "id": "classic-coffered-chandelier",
+  "image": "36150897",
+  "category": "coffered",
+  "type": "Ceiling",
+  "en": {
+   "title": "Classic Coffered Chandelier Ceiling",
+   "short": "Elegant sunken panels with gold trim - made to frame a statement chandelier."
+  },
+  "ar": {
+   "title": "سقف كوفريد كلاسيكي للثريا",
+   "short": "ألواح غائرة أنيقة بإطار ذهبي — مصممة لاحتضان ثريا مميزة."
+  }
+ },
+ {
+  "id": "painted-dome",
+  "image": "15230447",
+  "category": "pop",
+  "type": "Ceiling",
+  "en": {
+   "title": "Painted Dome Mural Ceiling",
+   "short": "A hand-painted dome with mosaic rings - the ultimate artistic ceiling."
+  },
+  "ar": {
+   "title": "سقف قبة بجدارية مرسومة",
+   "short": "قبة مرسومة يدويًا بحلقات فسيفساء — أرقى الأسقف الفنية."
+  }
+ },
+ {
+  "id": "octagon-skylight",
+  "image": "11773469",
+  "category": "glass",
+  "type": "Ceiling",
+  "en": {
+   "title": "Octagonal Skylight Dome",
+   "short": "An eight-sided glass lantern that fills the room with natural daylight."
+  },
+  "ar": {
+   "title": "قبة مثمنة بمنور زجاجي",
+   "short": "فانوس زجاجي بثمانية أضلاع يملأ المكان بضوء النهار الطبيعي."
+  }
+ },
+ {
+  "id": "wooden-skylight-shaft",
+  "image": "8231475",
+  "category": "wooden",
+  "type": "Ceiling",
+  "en": {
+   "title": "Twisted Wooden Skylight",
+   "short": "Rotating timber frames rise to a skylight, glowing with tiny LED dots."
+  },
+  "ar": {
+   "title": "منور خشبي ملتف",
+   "short": "إطارات خشبية دوّارة ترتفع نحو المنور، متوهجة بنقاط LED صغيرة."
+  }
+ },
+ {
+  "id": "wavy-wood-baffle",
+  "image": "8407583",
+  "category": "wooden",
+  "type": "Ceiling",
+  "en": {
+   "title": "Wavy Wood Baffle Ceiling",
+   "short": "Flowing CNC-cut wooden fins that create a soft, ocean-wave effect."
+  },
+  "ar": {
+   "title": "سقف خشبي متموج",
+   "short": "زعانف خشبية مقصوصة بتقنية CNC تخلق تأثير أمواج البحر الناعمة."
+  }
+ },
+ {
+  "id": "parametric-wood-grid",
+  "image": "33898339",
+  "category": "modern",
+  "type": "Ceiling",
+  "en": {
+   "title": "Parametric Wood Grid Ceiling",
+   "short": "A 3D wooden lattice that dips and rises like a dune, lit from behind."
+  },
+  "ar": {
+   "title": "سقف شبكي خشبي بارامتري",
+   "short": "شبكة خشبية ثلاثية الأبعاد تنخفض وترتفع ككثبان الرمل، مضاءة من الخلف."
+  }
+ },
+ {
+  "id": "flowing-slat-ceiling",
+  "image": "12701332",
+  "category": "wooden",
+  "type": "Ceiling",
+  "en": {
+   "title": "Flowing Timber Slat Ceiling",
+   "short": "Thin timber battens that bend and fold across ceiling and walls."
+  },
+  "ar": {
+   "title": "سقف شرائح خشبية انسيابية",
+   "short": "شرائح خشبية رفيعة تنحني وتنثني عبر السقف والجدران."
+  }
+ },
+ {
+  "id": "heritage-timber-roof",
+  "image": "17225528",
+  "category": "wooden",
+  "type": "Ceiling",
+  "en": {
+   "title": "Heritage Timber Roof Ceiling",
+   "short": "Exposed beams and stepped timber layers - traditional and full of character."
+  },
+  "ar": {
+   "title": "سقف خشبي تراثي",
+   "short": "عوارض مكشوفة وطبقات خشبية متدرجة — تقليدي ومليء بالطابع."
+  }
+ },
+ {
+  "id": "triangle-panel",
+  "image": "10347257",
+  "category": "modern",
+  "type": "Ceiling",
+  "en": {
+   "title": "Triangular Panel Geometric Ceiling",
+   "short": "Faceted triangle panels that catch light and shadow like a diamond."
+  },
+  "ar": {
+   "title": "سقف هندسي بألواح مثلثة",
+   "short": "ألواح مثلثة متعددة الأوجه تلتقط الضوء والظل كالألماس."
+  }
+ },
+ {
+  "id": "diamond-glass-grid",
+  "image": "9460107",
+  "category": "glass",
+  "type": "Ceiling",
+  "en": {
+   "title": "Diamond Glass Grid Roof",
+   "short": "A criss-cross steel and glass grid that floods courtyards with daylight."
+  },
+  "ar": {
+   "title": "سقف زجاجي بشبكة ماسية",
+   "short": "شبكة متقاطعة من الفولاذ والزجاج تغمر الأفنية بضوء النهار."
+  }
+ },
+ {
+  "id": "industrial-glass-roof",
+  "image": "9287916",
+  "category": "glass",
+  "type": "Ceiling",
+  "en": {
+   "title": "Industrial Glass Roof",
+   "short": "Steel trusses and clear roofing for bright loft, porch and café spaces."
+  },
+  "ar": {
+   "title": "سقف زجاجي صناعي",
+   "short": "جملونات فولاذية وسقف شفاف لمساحات اللوفت والمداخل والمقاهي المشرقة."
+  }
+ },
+ {
+  "id": "sculpted-skylight",
+  "image": "31735039",
+  "category": "modern",
+  "type": "Ceiling",
+  "en": {
+   "title": "Sculpted Skylight Atrium",
+   "short": "Smooth sculpted curves, linear lights and a ribbed skylight above."
+  },
+  "ar": {
+   "title": "ردهة بمنور منحوت",
+   "short": "منحنيات منحوتة ناعمة وإضاءة خطية ومنور مضلّع في الأعلى."
+  }
+ },
+ {
+  "id": "spiral-plaster",
+  "image": "34961627",
+  "category": "pop",
+  "type": "Ceiling",
+  "en": {
+   "title": "Spiral Plaster Ceiling",
+   "short": "A hand-sculpted swirl that spins out from a glowing crystal light."
+  },
+  "ar": {
+   "title": "سقف جبسي حلزوني",
+   "short": "دوامة منحوتة يدويًا تنطلق من إضاءة كريستال متوهجة."
+  }
+ },
+ {
+  "id": "wood-plank-chandelier",
+  "image": "937526",
+  "category": "wooden",
+  "type": "Ceiling",
+  "en": {
+   "title": "Wooden Plank Ceiling with Chandelier",
+   "short": "Dark tongue-and-groove planks with warm spots and a brass chandelier."
+  },
+  "ar": {
+   "title": "سقف ألواح خشبية مع ثريا",
+   "short": "ألواح لسان وأخدود داكنة مع سبوتات دافئة وثريا نحاسية."
+  }
+ },
+ {
+  "id": "barrel-vault-beams",
+  "image": "16223495",
+  "category": "coffered",
+  "type": "Ceiling",
+  "en": {
+   "title": "Barrel Vault Beam Ceiling",
+   "short": "Curved white arches with bold black ribs - striking and graphic."
+  },
+  "ar": {
+   "title": "سقف قبوي أسطواني بعوارض",
+   "short": "أقواس بيضاء منحنية بأضلاع سوداء جريئة — لافت وبصري."
+  }
+ },
+ {
+  "id": "minimal-layered",
+  "image": "8678894",
+  "category": "gypsum",
+  "type": "Ceiling",
+  "en": {
+   "title": "Minimal Layered White Ceiling",
+   "short": "Crisp layered planes and shadow gaps for a pure, minimalist interior."
+  },
+  "ar": {
+   "title": "سقف أبيض بسيط متعدد الطبقات",
+   "short": "مستويات متدرجة حادة وفواصل ظل لتصميم داخلي بسيط ونقي."
+  }
+ },
+ {
+  "id": "curved-slat-wall",
+  "image": "248850",
+  "category": "wall",
+  "type": "Wall",
+  "en": {
+   "title": "Curved Wood Slat Wall",
+   "short": "Vertical wooden slats wrapped around a curved wall for a calm, natural feel."
+  },
+  "ar": {
+   "title": "جدار شرائح خشبية منحني",
+   "short": "شرائح خشبية عمودية تلتف حول جدار منحني لإحساس هادئ وطبيعي."
+  }
+ },
+ {
+  "id": "rustic-plank-wall",
+  "image": "3750272",
+  "category": "wall",
+  "type": "Wall",
+  "en": {
+   "title": "Rustic Reclaimed Plank Wall",
+   "short": "Weathered horizontal planks full of knots and character."
+  },
+  "ar": {
+   "title": "جدار ألواح خشبية ريفي معاد تدويره",
+   "short": "ألواح أفقية معتّقة مليئة بالعُقد والطابع المميز."
+  }
+ },
+ {
+  "id": "marble-bath-wall",
+  "image": "7166635",
+  "category": "wall",
+  "type": "Wall",
+  "en": {
+   "title": "Statuario Marble Bathroom Wall",
+   "short": "Dramatic veined marble slabs for a luxury hotel-style bathroom."
+  },
+  "ar": {
+   "title": "جدار حمام من رخام ستاتواريو",
+   "short": "ألواح رخام بعروق لافتة لحمام فاخر بطابع الفنادق."
+  }
+ },
+ {
+  "id": "stone-niche-bath",
+  "image": "6585765",
+  "category": "wall",
+  "type": "Wall",
+  "en": {
+   "title": "Stone-Look Wall with Lit Niche",
+   "short": "Warm stone-look porcelain walls with a glowing recessed shelf niche."
+  },
+  "ar": {
+   "title": "جدار بمظهر حجري مع كوة مضيئة",
+   "short": "جدران بورسلان بمظهر حجري دافئ مع رف غائر متوهج."
+  }
+ },
+ {
+  "id": "white-brick-kitchen",
+  "image": "2062426",
+  "category": "wall",
+  "type": "Wall",
+  "en": {
+   "title": "White Brick Kitchen Wall",
+   "short": "Clean white brick-slip wall - fresh, bright and easy to wipe."
+  },
+  "ar": {
+   "title": "جدار مطبخ بالطوب الأبيض",
+   "short": "جدار نظيف بشرائح الطوب الأبيض — منعش ومشرق وسهل المسح."
+  }
+ },
+ {
+  "id": "charcoal-accent-wall",
+  "image": "1457842",
+  "category": "wall",
+  "type": "Wall",
+  "en": {
+   "title": "Charcoal TV Accent Wall",
+   "short": "A deep charcoal feature wall that frames the TV and adds depth."
+  },
+  "ar": {
+   "title": "جدار تلفزيون مميز باللون الفحمي",
+   "short": "جدار مميز باللون الفحمي الداكن يؤطّر التلفزيون ويضيف عمقًا."
+  }
+ }
+]

@@ -1,135 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — CeilCraft Studio</title>
-  <meta name="description" content="Request a free quote or site visit for your ceiling or wall design." />
+  <title>اتصل بنا | سيل كرافت للجبس بورد</title>
+  <meta name="description" content="اتصل أو أرسل صور المكان على الواتساب لعرض سعر مجاني." />
+  <link rel="alternate" hreflang="en" href="en/contact.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script>
-    /* Apply saved language before the page paints (prevents a flash of the wrong layout) */
-    (function () {
-      var h = document.documentElement, l;
-      try { l = new URLSearchParams(location.search).get("lang") || localStorage.getItem("cc-lang"); } catch (e) {}
-      if (l === "ar") { h.lang = "ar"; h.dir = "rtl"; h.classList.add("i18n-pending"); setTimeout(function () { h.classList.add("i18n-ready"); }, 2500); }
-    })();
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-<body data-page="contact">
-  <header id="site-header"></header>
+<body>
 
-  <main>
-    <section class="page-hero">
-      <div class="page-hero__bg" style="background-image:url('images/8232455.jpg?v=2')"></div>
-      <div class="container page-hero__content">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>Contact</nav>
-        <h1>Request a Free Quote</h1>
-        <p>Tell us about your space and we'll get back to you within 24 hours, or message us directly on WhatsApp.</p>
+  <a class="skip" href="#main">تخطي إلى المحتوى</a>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="./">سيل كرافت للجبس بورد</a>
+      <a class="phone-pill" href="tel:+923000000000" aria-label="اتصل الآن">📞</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav" aria-label="القائمة"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="siteNav">
+        <ul>
+          <li><a class="" href="./">الرئيسية</a></li><li class="has-sub"><a class="" href="services.html">خدماتنا</a><button class="sub-btn" aria-label="خدماتنا" aria-expanded="false">▾</button>
+            <ul class="sub"><li><a class="" href="gypsum-ceilings.html">اسقف جبس بورد</a></li><li><a class="" href="partitions.html">قواطع جبس بورد</a></li><li><a class="" href="wall-decor.html">ديكورات الجدران وجدار التلفزيون</a></li><li><a class="" href="classic-wood-ceilings.html">اسقف كلاسيك وخشبية</a></li><li><a class="" href="installation-team.html">معلم جبس بورد وفريق التركيب</a></li></ul></li><li><a class="" href="prices.html">الأسعار</a></li><li><a class="" href="areas.html">مناطق الخدمة</a></li><li><a class="" href="works.html">الأعمال</a></li><li><a class="" href="about.html">من نحن</a></li><li><a class="is-active" href="contact.html">اتصل بنا</a></li>
+          <li class="lang"><a href="en/contact.html" hreflang="en" lang="en">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+
+    <section class="box hero">
+      
+      <h1>اتصل بنا – سيل كرافت للجبس بورد</h1>
+      <p class="intro">إذا كنت تفكر في سقف جبس بورد أو قواطع أو ديكور جدار تلفزيون، أسهل طريقة هي الاتصال مباشرة أو إرسال صور المكان على الواتساب.</p><p class="intro">نرد قدر الإمكان خلال أوقات العمل، وإذا لم نرد فوراً أرسل رسالة وسنعاود الاتصال بك.</p>
+      <div class="badges"><span class="badge">ضمان 10 سنوات</span><span class="badge">عرض سعر مجاني خلال 24 ساعة</span></div>
+      
+      <div class="btns">
+        <a class="btn btn--yellow" href="tel:+923000000000">اتصال: <span dir="ltr">0300 0000000</span></a>
+        <a class="btn btn--outline" href="https://wa.me/923000000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AC%D8%A8%D8%B3%20%D8%A8%D9%88%D8%B1%D8%AF." target="_blank" rel="noopener">واتساب</a>
       </div>
     </section>
 
-    <!-- Contact cards -->
-    <section class="section section--tight">
-      <div class="container info-cards">
-        <a class="info-card" data-site-href="phone">
-          <span class="info-card__icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
-          <small>Call us</small><strong data-site="phone"></strong>
-        </a>
-        <a class="info-card" data-site-href="whatsapp" target="_blank" rel="noopener">
-          <span class="info-card__icon info-card__icon--green"><svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg></span>
-          <small>WhatsApp</small><strong>Chat with us</strong>
-        </a>
-        <a class="info-card" data-site-href="email">
-          <span class="info-card__icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
-          <small>Email</small><strong data-site="email"></strong>
-        </a>
-        <div class="info-card">
-          <span class="info-card__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-          <small>Visit our studio</small><strong data-site="address"></strong>
-        </div>
+    <section class="box">
+      <h2>بيانات التواصل</h2>
+      <div class="inner inner--narrow contact-list">
+        <p><b>الهاتف (اتصال مباشر):</b> <a href="tel:+923000000000" dir="ltr">+92 300 0000000</a></p>
+        <p><b>واتساب:</b> <a href="https://wa.me/923000000000" target="_blank" rel="noopener" dir="ltr">+923000000000</a></p>
+        <p><b>البريد الإلكتروني:</b> <a href="mailto:hello@ceilcraft.studio">hello@ceilcraft.studio</a></p>
+        <p><b>العنوان:</b> مين بوليفارد، جلبرج، لاهور</p>
+        <p><b>أوقات العمل:</b> من 9 صباحاً إلى 9 مساءً، من السبت إلى الخميس</p>
+        
+      <div class="btns btns--inline">
+        <a class="btn btn--yellow" href="tel:+923000000000">اتصال: <span dir="ltr">0300 0000000</span></a>
+        <a class="btn btn--outline" href="https://wa.me/923000000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AC%D8%A8%D8%B3%20%D8%A8%D9%88%D8%B1%D8%AF." target="_blank" rel="noopener">واتساب</a>
+      </div>
       </div>
     </section>
 
-    <!-- Form -->
-    <section class="section section--tint">
-      <div class="container contact__inner">
-        <div>
-          <p class="eyebrow">Get in Touch</p>
-          <h2>Tell us about your project</h2>
-          <p class="muted">Fill in the form and our designer will call you to arrange a free site visit. Prefer chatting? Use the WhatsApp button and your details are sent as a message.</p>
-          <ul class="contact__info">
-            <li><span>Working hours</span><b data-site="hours"></b></li>
-            <li><span>Response time</span>Within 24 hours</li>
-            <li><span>Service area</span>Lahore, Islamabad, Karachi & nearby cities</li>
-          </ul>
+    <section class="box">
+      <h2>أرسل طلبك على الواتساب</h2><p class="intro">املأ البيانات وسيُفتح الواتساب برسالة جاهزة، ثم أرفق صور المكان.</p>
+      <form class="inner inner--narrow qform" id="waForm" novalidate data-wa="923000000000" data-hello="مرحباً، أريد عرض سعر لأعمال الجبس بورد." data-required="يرجى كتابة الاسم ورقم الهاتف">
+        <div class="qform__row">
+          <label>الاسم *<input name="name" required autocomplete="name" /></label>
+          <label>رقم الهاتف *<input name="phone" required inputmode="tel" autocomplete="tel" dir="ltr" /></label>
         </div>
-
-        <div class="form-card">
-          <form class="form" id="quoteForm" novalidate>
-            <div class="picked" id="pickedDesign" hidden></div>
-            <div class="form__row">
-              <label>Full name *<input name="name" required placeholder="Your name" autocomplete="name" /></label>
-              <label>Phone *<input name="phone" required placeholder="03xx xxxxxxx" inputmode="tel" autocomplete="tel" /></label>
-            </div>
-            <div class="form__row">
-              <label>City<input name="city" placeholder="e.g. Lahore" /></label>
-              <label>Space type
-                <select name="space">
-                  <option>Living Room</option><option>Bedroom</option><option>Drawing Room</option><option>Kitchen</option>
-                  <option>Bathroom</option><option>Office</option><option>Shop / Café</option><option>Hall / Lobby</option><option>Other</option>
-                </select>
-              </label>
-            </div>
-            <div class="form__row">
-              <label>Design of interest
-                <select name="design" id="formDesign"><option value="">Not sure yet</option></select>
-              </label>
-              <label>Area (sq ft)<input name="area" type="number" min="1" placeholder="e.g. 250" /></label>
-            </div>
-            <label>Message<textarea name="message" rows="4" placeholder="Ceiling height, timeline, lighting ideas…"></textarea></label>
-            <div class="form__actions">
-              <button class="btn btn--gold" type="submit">Send Request</button>
-              <button class="btn btn--whatsapp" type="button" id="sendWhatsapp">Send via WhatsApp</button>
-            </div>
-          </form>
-
-          <div class="form-success" id="formSuccess" hidden>
-            <div class="form-success__icon">✓</div>
-            <h3>Thank you, <span id="successName"></span>!</h3>
-            <p>We've received your request. Our designer will call you within 24 hours to arrange your free site visit.</p>
-            <button class="btn btn--outline" id="sendAnother">Send another request</button>
-          </div>
+        <div class="qform__row">
+          <label>المدينة والمنطقة<input name="city" /></label>
+          <label>الخدمة المطلوبة
+            <select name="service"><option>اسقف جبس بورد</option><option>قواطع جبس بورد</option><option>ديكورات الجدران وجدار التلفزيون</option><option>اسقف كلاسيك وخشبية</option><option>معلم جبس بورد وفريق التركيب</option><option>أخرى / غير متأكد</option></select>
+          </label>
         </div>
-      </div>
+        <label>المساحة التقريبية (اختياري)<input name="size" /></label>
+        <label>تفاصيل إضافية<textarea name="msg" rows="3"></textarea></label>
+        <p class="qform__err" id="formErr" hidden></p>
+        <button class="btn btn--yellow" type="submit">إرسال الطلب على الواتساب</button>
+      </form>
     </section>
 
-    <!-- FAQ -->
-    <section class="section">
-      <div class="container container--narrow">
-        <div class="section-head" data-reveal>
-          <p class="eyebrow">Before You Ask</p>
-          <h2>Quick Answers</h2>
-        </div>
-        <div class="faq" data-reveal>
-          <div class="faq__item"><button class="faq__q" aria-expanded="false">How quickly can you visit my site?</button>
-            <div class="faq__a"><p>Usually within 1 – 2 working days of your request, at a time that suits you.</p></div></div>
-          <div class="faq__item"><button class="faq__q" aria-expanded="false">Are the prices on the website final?</button>
-            <div class="faq__a"><p>They are estimates. Your final, fixed quote depends on exact measurements, materials and lighting choices.</p></div></div>
-          <div class="faq__item"><button class="faq__q" aria-expanded="false">Do you work outside the city?</button>
-            <div class="faq__a"><p>Yes, for larger projects. Travel costs may apply outside our main service area.</p></div></div>
-        </div>
+    <section class="box">
+      <h2>كيف تشرح شغلك لنا بطريقة تختصر الوقت؟</h2>
+      <div class="inner inner--narrow">
+        <ol class="steps"><li>صوّر المكان (الصالة، الغرفة، الممر أو الجدار) من زاويتين أو ثلاث.</li><li>اكتب ماذا تريد: سقف جبس، قاطع، ديكور جدار، أو شغل كامل للبيت.</li><li>اذكر المدينة والمنطقة.</li><li>أرسل الصور والمعلومات على الواتساب، ونرجع لك بسعر تقريبي ووقت التنفيذ.</li></ol>
       </div>
     </section>
   </main>
 
-  <footer id="site-footer"></footer>
-
-  <script src="js/data.js"></script>
-  <script src="js/i18n.js"></script>
-  <script src="js/layout.js"></script>
-  <script src="js/contact.js"></script>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-lead">اتصل بنا اليوم للحصول على <b>تسعيرة مجانية</b> لأعمال الجبس بورد.</p>
+      <dl class="footer-info">
+        <dt>الهاتف (اتصال مباشر):</dt><dd><a href="tel:+923000000000" dir="ltr">0300 0000000</a></dd>
+        <dt>واتساب:</dt><dd><a href="https://wa.me/923000000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AC%D8%A8%D8%B3%20%D8%A8%D9%88%D8%B1%D8%AF." target="_blank" rel="noopener">إرسال على واتساب</a></dd>
+        <dt>أوقات العمل:</dt><dd>من 9 صباحاً إلى 9 مساءً، من السبت إلى الخميس</dd>
+        <dt>البريد الإلكتروني:</dt><dd><a href="mailto:hello@ceilcraft.studio">hello@ceilcraft.studio</a></dd>
+        <dt>العنوان:</dt><dd>مين بوليفارد، جلبرج، لاهور</dd>
+      </dl>
+      <ul class="socials"><li><a href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="#" target="_blank" rel="noopener">Facebook</a></li><li><a href="#" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://wa.me/923000000000" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+      <p class="copy">© 2026 سيل كرافت للجبس بورد — جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  <a class="fab" href="tel:+923000000000" aria-label="اتصل الآن"><span class="fab__tip">اتصل الآن</span><span class="fab__btn">📞</span></a>
+  <div class="lightbox" id="lightbox" hidden><button class="lightbox__close" aria-label="إغلاق">×</button><figure><img alt="" /><figcaption></figcaption></figure></div>
+  <script src="assets/main.js" defer></script>
 </body>
 </html>
